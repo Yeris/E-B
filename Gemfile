@@ -9,8 +9,8 @@ gem 'sqlite3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
-#use password encryption
-gem 'bcrypt-ruby', '3.1.2'
+
+gem 'bcrypt-ruby', '~> 3.1.2'
 
 #use Bootstrap
 gem 'bootstrap-sass', '2.3.2.0'
