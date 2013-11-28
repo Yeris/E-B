@@ -3,9 +3,9 @@
  <%= @user.name %> 
  
  <%= form_for(@book) do |f| %>
-  
+  <%= render 'shared/error_messages', object: f.object %>
   <div class="field">
-    <%= f.number_field :isbn, placeholder: "Add isbn" %>
+    <%= f.number_field :isbn, placeholder: "CAdd isbn" %>
   </div>
   <%= f.submit "Add", class: "btn btn-large btn-primary" %>
 <% end %>

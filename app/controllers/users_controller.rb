@@ -1,10 +1,16 @@
 class UsersController < ApplicationController
 def new
-    @user = User.new
+    @user = User.new    
+   
+
   end
   
   def show
     @user = User.find(params[:id])
+  @books = @user.books.paginate(page: params[:page])
+
+    @book = current_user.books.build if signed_in?
+
   end
   
  def create
