@@ -9,7 +9,6 @@ class StaticPagesController < ApplicationController
   end
   
   def serch
-   @books = Books.search(params[:search])
 end
   
 end

@@ -1,8 +1,8 @@
 ﻿<% provide(:title, "Sign in") %>
 <h1>Sign in</h1>
 <% if signed_in? %>
- 
-<meta http-equiv="Refresh" content="s; url=<% current_user %> />
+<% current_user %> 
+<meta http-equiv="Refresh" content="s; url="" />
 <% end %>
 
 <div class="row">

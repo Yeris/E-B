@@ -4,6 +4,13 @@ belongs_to :user
  validates :user_id, presence: true
  validates :isbn, presence: true
  
+ def self.search(search)
+  if search
+    find(:all, :conditions => ['isbn LIKE ?', "%#{search}%"])
+  else
+    find(:all)
+  end
+end
  # check_length
  
  #def check_length
